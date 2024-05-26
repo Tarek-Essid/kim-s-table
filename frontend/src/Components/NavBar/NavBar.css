@@ -1,0 +1,14 @@
+.Logout {
+  display: flex;
+  position: absolute;
+  margin-left: 75%;
+}
+
+.my-navbar {
+  height: 75px;
+  margin-top: -2%;
+}
+
+.me-auto {
+  font-size: medium;
+}
