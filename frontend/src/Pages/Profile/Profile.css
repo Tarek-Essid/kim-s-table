@@ -1,0 +1,24 @@
+.my-questions {
+  position: absolute;
+}
+
+.my-h4s {
+  font-family: Nunito Sans;
+  font-weight: bold;
+}
+
+.user-info {
+  font-family: Nunito Sans;
+}
+
+.card-content {
+  margin-left: 31%;
+  margin-top: 5%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.profile-h1 {
+  font-family: 'Times New Roman', Times, serif;
+}

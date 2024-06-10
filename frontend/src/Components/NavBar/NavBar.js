@@ -1,12 +1,12 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import {useDispatch} from "react-redux";
-import {logout} from "../../Redux/Actions/user";
-import Button from "react-bootstrap/Button";
-import kimslogo from "../assets/kimslogo.png";
-import "./NavBar.css";
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { useDispatch } from 'react-redux';
+import { logout } from '../../Redux/Actions/user';
+import Button from 'react-bootstrap/Button';
+import kimslogo from '../assets/kimslogo.png';
+import './NavBar.css';
 
 const NavBar = () => {
   const dispatch = useDispatch();
@@ -25,15 +25,17 @@ const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/profile">profile</Nav.Link>
-            <Nav.Link href="/Food-product">Food List</Nav.Link>
+            <Nav.Link href="/Menu">Menu</Nav.Link>
+            <Nav.Link href="/about-us">About us</Nav.Link>
             <Nav.Link href="/Add-product">Add Food</Nav.Link>
             <Nav.Link href="/Register">Register</Nav.Link>
             <Nav.Link href="/Login">Log in</Nav.Link>
+            <Nav.Link href="/uploads">uploads</Nav.Link>
 
             <Button
               href="/Login"
               className="Logout"
-              variant=""
+              variant="secondary"
               type="button"
               name="logout"
               onClick={handleLogout}>

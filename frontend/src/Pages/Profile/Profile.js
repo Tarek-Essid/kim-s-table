@@ -1,20 +1,32 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import {useSelector} from "react-redux";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import { useSelector } from 'react-redux';
+import './Profile.css';
 
 const Profile = () => {
   const user = useSelector((state) => state.userReducer.user);
   return (
-    <div>
-      <Card style={{width: "18rem"}}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+    <div className="card-content">
+      <h1 className="profile-h1"> Your Profile</h1>
+      <br></br>
+      <Card>
         <Card.Body>
-          <Card.Title>{user && user.name}</Card.Title>
-          <Card.Title>{user && user.lastName}</Card.Title>
-          <Card.Text>{user && user.email}</Card.Text>
-          <Card.Text>{user && user.phone}</Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <div className="my-questions">
+            <p className="my-h4s">Name : </p>
+            <hr></hr>
+            <p className="my-h4s">lastName : </p>
+            <hr></hr>
+            <p className="my-h4s">Email : </p>
+            <hr></hr>
+            <p className="my-h4s">Phone : </p>
+          </div>
+          <Card.Title className="user-info">{user && user.name}</Card.Title>
+          <hr></hr>
+          <Card.Title className="user-info">{user && user.lastName}</Card.Title>
+          <hr></hr>
+          <Card.Title className="user-info">{user && user.email}</Card.Title>
+          <hr></hr>
+          <Card.Title className="user-info">{user && user.phone}</Card.Title>
         </Card.Body>
       </Card>
     </div>

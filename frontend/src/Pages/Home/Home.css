@@ -1,3 +1,20 @@
-.landingPage {
-  background-color: black;
+.HomePagePic {
+  display: flex;
+  height: 900px;
+  position: static;
+  align-items: center !important;
+  justify-content: center;
+}
+
+.food-h1 {
+  font-size: 800%;
+  color: rgb(255, 0, 0);
+  font-family: Single Day;
+}
+
+.food-p {
+  font-size: larger;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-family: Roboto Condensed;
 }
