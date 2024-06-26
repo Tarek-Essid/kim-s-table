@@ -1,0 +1,26 @@
+.contact-container {
+  margin-left: 2%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.input2 {
+  margin-left: 50%;
+  margin-right: 35%;
+  margin-top: -10.8%;
+}
+
+.input1 {
+  margin-right: 55%;
+  margin-left: 30%;
+}
+
+.names {
+  margin-right: 60%;
+}

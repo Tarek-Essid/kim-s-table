@@ -31,6 +31,7 @@ const NavBar = () => {
             <Nav.Link href="/Register">Register</Nav.Link>
             <Nav.Link href="/Login">Log in</Nav.Link>
             <Nav.Link href="/uploads">uploads</Nav.Link>
+            <Nav.Link href="/contact-us">contact us</Nav.Link>
 
             <Button
               href="/Login"
